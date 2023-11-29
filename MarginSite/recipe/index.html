@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarginSite - Recette</title>
+    <script type="text/javascript" src="../URLGetter.js"></script>
+    <script type="text/javascript" src="../loadUser.js"></script>
+    <script type="text/javascript" defer src="../default.js"></script>
+    <script type="text/javascript" defer src="recipe.js"></script>
+    <script type="text/javascript" defer src="recipeAdder.js"></script>
+    <script type="text/javascript" defer src="recipeDelete.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style/core.css" />
+    <link rel="stylesheet" type="text/css" href="../style/standard.css" />
+    <link rel="stylesheet" type="text/css" href="../style/recipe.css" />
+    <link rel="icon" type="image/x-icon" href="../style/favicon.ico" />
+  </head>
+  <body>
+    <div class="body-div">
+      <div id="recipeList" class="list">
+        <div id="newRecipe" class="items" onclick="newRecipe">
+          Nouvelle recette
+        </div>
+      </div>
+      <div id="recipeAdder" class="list adder">
+        <input type="text" placeholder="Nom" class="items-adder" id="name" />
+        <br />
+        <input
+          type="text"
+          placeholder="Prix"
+          class="items-adder unity"
+          id="price"
+        />
+        <label>,</label>
+        <input
+          type="text"
+          class="items-adder cents"
+          id="priceCents"
+          maxlength="2"
+        />
+        <br />
+        <input
+          type="text"
+          placeholder="TVA"
+          class="items-adder unity"
+          id="tax"
+        />
+        <label>,</label>
+        <input
+          type="text"
+          class="items-adder cents"
+          id="taxCents"
+          maxlength="2"
+        />
+        <br />
+        <legend id="costRadioButton">Liste des Coûts</legend>
+        <button onclick="addRecipe()" class="buttonAdder">
+          Enregistrer Recette
+        </button>
+        <button onclick="deleteRecipe()" id="deleteButton" disabled>
+          Supprimer Recette
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

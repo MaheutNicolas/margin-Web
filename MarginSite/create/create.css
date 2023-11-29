@@ -1,0 +1,30 @@
+body {
+  size: 90%;
+  height: 90%;
+  background-image: url("../style/money-2724241_1280.webp");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  width: 25%;
+  height: 10%;
+  margin: 1%;
+  font-size: x-large;
+}
+
+button {
+  width: 25%;
+  height: 10%;
+  margin: 1%;
+  font-size: x-large;
+}
+html {
+  height: 80%;
+  width: 95%;
+  padding: 2%;
+}

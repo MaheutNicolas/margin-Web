@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarginSite - Login</title>
+    <script type="text/javascript" src="../URLGetter.js"></script>
+    <script type="text/javascript" defer src="login.js"></script>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <link rel="icon" type="image/x-icon" href="../style/favicon.ico" />
+  </head>
+  <body>
+    <input type="text" id="loginName" placeholder="Nom" required />
+    <input
+      type="password"
+      id="loginPassword"
+      placeholder="Mot de passe"
+      required
+    />
+    <button onclick="sendUser()">S'identifier</button>
+    <button onclick="switchToIndex()">Page d'acceuil</button>
+  </body>
+</html>

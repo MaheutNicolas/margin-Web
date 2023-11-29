@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarginSite - Coût Variable</title>
+    <script type="text/javascript" src="../URLGetter.js"></script>
+    <script type="text/javascript" src="../loadUser.js"></script>
+    <script type="text/javascript" defer src="../default.js"></script>
+    <script type="text/javascript" defer src="costVariable.js"></script>
+    <script type="text/javascript" defer src="costVariableAdder.js"></script>
+    <script type="text/javascript" defer src="costVariableDelete.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style/core.css" />
+    <link rel="stylesheet" type="text/css" href="../style/standard.css" />
+    <link rel="icon" type="image/x-icon" href="../style/favicon.ico" />
+  </head>
+  <body>
+    <div class="body-div">
+      <div id="costVariableList" class="list">
+        <div id="newCost" class="items" onclick="newCost">Nouveau Coût</div>
+      </div>
+      <div id="costVariableAdder" class="list adder">
+        <input type="text" placeholder="Nom" class="items-adder" id="name" />
+        <br />
+        <input
+          type="text"
+          placeholder="Montant"
+          class="items-adder unity"
+          id="amount"
+        />
+        <label>,</label>
+        <input
+          type="text"
+          id="amountCents"
+          class="items-adder cents"
+          maxlength="2"
+        />
+        <br />
+        <button onclick="addCost()" class="buttonAdder">
+          Enregistrer Coût
+        </button>
+        <button onclick="deleteCost()" id="deleteButton" disabled>
+          Supprimer Coût
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

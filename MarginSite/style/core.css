@@ -1,0 +1,91 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #456a7f;
+}
+
+header {
+  width: 100%;
+  top: 0%;
+  height: 60px;
+  position: fixed;
+  background-color: wheat;
+  z-index: 0;
+  display: flex;
+}
+.body-div {
+  display: flex;
+  height: 100%;
+  margin-top: 65px;
+  padding-left: 10px;
+}
+.menuButton {
+  height: 32px;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: x-large;
+}
+.menuButton:hover {
+  background: #ddd;
+  color: black;
+}
+/**
+Drop Down menu 
+*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 15px;
+  width: 75%;
+}
+
+.dropdown .content {
+  display: none;
+  position: absolute;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+  top: 100%;
+  background-color: wheat;
+}
+
+.dropdown:hover .content {
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+/**
+location adder form
+*/
+#locationAdder {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 25%;
+  left: 10%;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+#locationAdder * {
+  margin: 5px;
+}
+
+/*--text: #f4f8fb;
+--background: #456a7f;
+--primary: #3c85af;
+--secondary: #122835;
+--accent: #5099c3;*/

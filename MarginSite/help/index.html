@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" defer src="help.js"></script>
+    <link rel="stylesheet" type="text/css" href="help.css" />
+    <title>MarginSite - Help</title>
+  </head>
+  <body>
+    <button id="return" onclick="returnToLogin()">Login</button>
+    <button id="process" onclick="onClickDisplay(event)">
+      Comment utilliser le calculateur ?
+    </button>
+    <div id="processDiv" class="hiddenDiv">
+      <label
+        >1.Enregistrer vos coûts dans les parties correspondantes (Coût Variable
+        / Coût Fixe)</label
+      >
+      <br />
+      <label
+        >2.Etablissez vos recettes avec les coût variables enregistrer</label
+      >
+      <br />
+      <label
+        >3.Vous pouvez consulter l'onglet Statistique pour voir les marges
+        réaliser</label
+      >
+      <br />
+      <label
+        >4.Vous pouvez choisir la localisation avec l'onglet correspondants pour
+        tester différentes combinaisons</label
+      >
+    </div>
+    <button id="variable" onclick="onClickDisplay(event)">
+      Coûts variables
+    </button>
+    <div id="variableDiv" class="hiddenDiv">
+      <label
+        >Dans cette parties, ce sont tous les coûts liées au recettes.</label
+      >
+      <br />
+      <label
+        >Si le nombres de ventes augmentes, ces côuts vont donc augmenter
+        proportionnellement</label
+      >
+      <br />
+      <label
+        >Penser au matières premières ou les coût de livraisons possibles par
+        exemple</label
+      >
+      <br />
+      <label
+        >Si c'est un produit que vous revendez en l'état, vous pouvez aussi
+        l'ajouter ici</label
+      >
+      <br />
+      <br />
+      <label
+        >Lorsqu'un coût est modifier, cela le modifie aussi dans toutes les
+        recettes</label
+      >
+      <br />
+      <label
+        >Si un coût est supprimer, il est aussi retirer des recettes
+        correspondantes</label
+      >
+    </div>
+    <button id="fixed" onclick="onClickDisplay(event)">Coûts fixes</button>
+    <div id="fixedDiv" class="hiddenDiv">
+      <label
+        >Cette partie concerne les coût qui ne changerons pas ou très peu et qui
+        ne sont pas liée a l'activité</label
+      >
+      <br />
+      <label
+        >Pensez aux loyer, personnel, certain coût énergétique (Un frigo en
+        fonctionnement le sera tous le temps),</label
+      >
+      <br />
+      <label
+        >Les assurances, prestation extérieurs (avocat, comptable),
+        amortissement, certains impôts,</label
+      >
+      <br />
+      <label>Internet, téléphone, intéret des crédits</label>
+      <br />
+    </div>
+    <button id="recipe" onclick="onClickDisplay(event)">Recettes</button>
+    <div id="recipeDiv" class="hiddenDiv">
+      <label>Vous allez ici entrer configurer vos recettes</label>
+      <br />
+      <label
+        >Fixer un prix et calculer la TVA en fonction du taux en vigueurs</label
+      >
+      <br />
+      <label
+        >(20% est le taux normal, 10 et 5,5 sont des taux dérogatoire en
+        Françe)</label
+      >
+      <br />
+      <label>Vous pouvez ensuite sélectionnez les coûts à ajoutés</label>
+    </div>
+    <button id="stat" onclick="onClickDisplay(event)">Statistique</button>
+    <div id="statDiv" class="hiddenDiv">
+      <label>Vous pouvez consulter les Statistique de vos recettes ici</label>
+    </div>
+    <button id="location" onclick="onClickDisplay(event)">Location</button>
+    <div id="locationDiv" class="hiddenDiv">
+      <label
+        >Vous pouvez changer de localisation graçe à la liste déroulante</label
+      >
+      <br />
+      <label
+        >Le nom entouré de Bleue Fonçé dans la liste est la localisation
+        actuellement sélectionné</label
+      >
+      <br />
+      <label>le + permet d'ajouter une localisation</label>
+      <br />
+      <label
+        >Vous pouvez modifier ou supprimer la localisation actuellement
+        sélectionner en cliquant sur le bouton localisation</label
+      >
+    </div>
+  </body>
+</html>

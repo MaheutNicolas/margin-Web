@@ -1,0 +1,34 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body {
+  background-color: #456a7f;
+}
+button {
+  width: 100%;
+  height: 5dvh;
+  font-size: x-large;
+  margin-bottom: 10px;
+  color: wheat;
+  font-size: x-large;
+  background-color: #3c85af;
+  border: none;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.hiddenDiv {
+  display: none;
+  font-size: x-large;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: wheat;
+  border: none;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+  padding: 2%;
+}
+#return {
+  width: 20dvh;
+  height: 8dvh;
+}

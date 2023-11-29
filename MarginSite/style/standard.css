@@ -1,0 +1,72 @@
+.list {
+  width: 40%;
+  height: max-content;
+}
+.adder {
+  padding: 1%;
+  border-style: solid;
+  border-radius: 2px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #122835;
+}
+.adder label {
+  color: #ddd;
+  font-size: xx-large;
+}
+.items {
+  border-style: solid;
+  border-color: black;
+  border-radius: 5%;
+  padding: 5px;
+  width: 50%;
+  height: 30%;
+  text-align: center;
+  font-size: x-large;
+  margin-left: 20%;
+  background-color: #3c85af;
+}
+.items:hover {
+  size: 70%;
+  background-color: wheat;
+}
+.items-adder {
+  height: 30px;
+  font-size: x-large;
+  background-color: wheat;
+  margin-bottom: 8px;
+}
+.buttonAdder {
+  height: 35px;
+  font-size: x-large;
+  background-color: wheat;
+  border: none;
+}
+.buttonAdder:hover {
+  background: #ddd;
+}
+#deleteButton {
+  height: 35px;
+  font-size: x-large;
+  background-color: wheat;
+  border: none;
+}
+#deleteButton:hover {
+  background: #ddd;
+}
+#deleteButton:disabled {
+  background: #122835;
+}
+#costRadioButton label {
+  color: black;
+  font-size: larger;
+}
+.cents {
+  width: 9dvh;
+}
+.unity {
+  text-align: right;
+}
+input::placeholder {
+  text-align: left;
+}

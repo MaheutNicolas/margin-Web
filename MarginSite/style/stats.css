@@ -1,0 +1,32 @@
+.list {
+  width: 30%;
+  height: max-content;
+}
+.viewer {
+  background-color: wheat;
+  font-size: xx-large;
+  height: fit-content;
+  padding: 10px;
+  border: 10px solid #122835;
+}
+.items {
+  border-style: solid;
+  border-color: black;
+  border-radius: 5%;
+  padding: 5px;
+  width: 50%;
+  height: 30%;
+  text-align: center;
+  font-size: x-large;
+  margin-left: 20%;
+  background-color: #3c85af;
+}
+#costArrayDiv {
+  display: flex;
+}
+.arrayDiv {
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  border-width: 2px;
+}
